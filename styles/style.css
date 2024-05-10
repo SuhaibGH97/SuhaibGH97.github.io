@@ -1,0 +1,319 @@
+/*Computer Engineering Technology student
+Gratuated: telecommunication engineering
+logo website
+logomakr.com/app/4eoF2L
+logomakr.com/app/02EyvZ
+https://logomakr.com/
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@500&family=Poppins:wght@500&display=swap');
+body{
+    display: grid;
+    grid-template-columns: 97%;
+    margin:0px;
+    padding: 0px;
+    background-color: azure;
+    font-family: 'Poppins','Times New Roman', Times, serif;
+}
+header{
+    width: 100%;
+    grid-row: 1;
+    font-family: 'Anton','Franklin Gothic Medium', 'Arial Narrow';
+}
+nav{
+    display:flex ;
+    width: 85%;
+    height: 85%;
+    margin: auto;
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    
+    color:red;
+}
+nav ul li {
+
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.me{
+    grid-row: 5;
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.me h3{
+    font-size: 50px;
+    color: grey;
+    margin-bottom: 20px;
+}
+span{
+    font-size: xx-large;
+    color:orange;
+    font-family: 'Dancing Script','Times New Roman', Times;
+}
+.me p{
+    color: #555;
+    line-height: 22px;
+
+}
+.imgs{
+    grid-row: 2/5;
+    width: 45%;
+    height:80%; 
+    bottom: 0px;
+    right: 100px;
+}
+
+.imgs:hover #background{
+    bottom: 40px;
+}
+.imgs:hover #me{
+    left: 40px;
+}
+
+#naitLogo{
+    grid-row: 6/8;
+    
+    border:4px solid orange;
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0px;   
+}
+#naitLogo a img{
+    height: 70%;
+    width: 70%; 
+    padding: 20px;  
+}
+#bauLogo{
+    grid-row: 8/10;
+    border:4px solid orange;
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0px;
+}
+#bauLogo a img{
+    height: 70%;
+    width: 70%;
+    padding: 20px;
+}
+footer{
+    margin-top: 10px;
+    grid-row: 10;
+    width: 100%;
+    background-color: #555;
+    color: orange;
+
+}
+.soccer{
+    margin: 20px;
+    border:4px solid orange;
+    border-radius: 25px;
+    width: 95%;
+    text-align: center;
+    justify-content: center;
+}
+.alberta{
+    margin: 20px;
+    border:4px solid orange;
+    border-radius: 25px;
+    width: 95%;
+    text-align: center;
+    justify-content: center;
+}
+.toronto{
+    margin: 20px;
+    border:4px solid orange;
+    border-radius: 25px;
+    width: 95%;
+    text-align: center;
+    justify-content: center;
+}
+.soccer img{
+    width: 95%;
+
+}
+ .alberta img{
+    width: 95%;
+
+ }
+.toronto img{
+    width: 95%;
+}
+footer h2{
+    text-align: center;
+    color: orange;
+}
+.contactme h2{
+    width: 100%;
+    background-color: #555;
+    color: orange;
+    text-align: center;
+}
+.contactme img{
+    width: 80%;
+    margin: 0 10%;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 800px) {
+body{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    margin:20px;
+    padding: 10px;
+    background-color: azure;
+
+}
+header{
+    width: 100%;
+    margin-bottom: 20px;
+    grid-column: 1/3;
+    grid-row: 1;
+}
+nav{
+    display:flex ;
+    width: 85%;
+    margin: auto;
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    
+    color:red;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.me{
+    grid-column: 1;
+    grid-row: 5;
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.me h3{
+    font-size: 50px;
+    color: grey;
+    margin-bottom: 20px;
+}
+span{
+    color:orange;
+}
+.me p{
+    color: #555;
+    line-height: 22px;
+
+}
+.imgs{
+    grid-column: 2;
+    grid-row: 3/6;
+    width: 45%;
+    height:78%;
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
+}
+.imgs img{
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-5%);
+    transition: bottom 1s, left 1s;
+}
+.imgs:hover #background{
+    bottom: 40px;
+}
+.imgs:hover #me{
+    left: 40px;
+}
+.studies{
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0px;
+    
+}
+
+.studies #naitLogo{
+    grid-column: 1;
+    grid-row: 6;
+    margin-right: 10%;
+    border:4px solid orange;   
+}
+.studies #naitLogo a{
+    height: 300px;
+    width: 300px; 
+    padding: 20px;  
+}
+.studies #bauLogo{
+    grid-column: 1;
+    grid-row: 7;
+    margin-left: 10%;
+    border:4px solid orange;
+}
+.studies #bauLogo a{
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+}
+footer{
+    grid-column: 1/3;
+    grid-row: 10;
+    width: 100%;
+    background-color: #555;
+    color: orange;
+
+}
+
+.soccer{
+    grid-column: 1;
+    grid-row: 2;
+}
+.alberta{
+    grid-column: 1/3;
+    grid-row: 3;
+}
+.toronto{
+    grid-column: 2;
+    grid-row: 2;
+}
+.soccer img{
+    width: 95%;
+
+}
+ .alberta img{
+    width: 95%;
+
+ }
+.toronto img{
+    width: 95%;
+}
+.contactme{
+    grid-row: 2/5;
+    grid-column: 1/3;
+}
+}
