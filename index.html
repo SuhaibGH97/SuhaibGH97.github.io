@@ -9,39 +9,54 @@
     <!-- Link to Ajax library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
     <!-- Link to your JS script -->
-    <script src="./code/code.js"></script>
+    <script src="./code/code.js" defer></script>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#"><img src="./pics/logo.jpg" alt="Logo"></a>
+        <nav id="navbar">
+            <a href="#"><img id="logo" src="./pics/logo.jpg" alt="Logo"></a>
             <ul>
                 <li><a href="#"><u>HOME</u></a></li>
                 <li><a href="./pages/Activities.html"><u>Activities</u></a></li>
                 <li><a href="./pages/contact.html"><u>Contact</u></a></li>
             </ul>
-        </header>
-    
-        <aside class="me">
-            <h1>I am Suhaib <span>Ghanem</span></h1>
-            <p>  
-                A Computer Engineering Technology student at NAIT 
-                <br> Edmonton, AB
-            </p>
+        </nav>
+    </header>
+    <main>
+        <aside class="hidden" id="home">
+            <section id="info">
+                <h1>I am <span>Suhaib Ghanem</span></h1>
+                <p>  
+                    Computer Engineering Technologist | Web Developer
+                    <br>NAIT Gratuate 
+                    <br>Edmonton, AB
+                </p>
+            </section>
+            <!-- <img src="./pics/background.jpg" alt="background" id="background"> -->
+            <img src="./pics/main_pic-removebg-preview.png" alt="my picture" id="me">
         </aside>
-        <section class="imgs">
-            <img src="./pics/background.jpg" alt="background" id="background">
-            <img src="./pics/me.jpg" alt="my picture" id="me">
-        </section>
     
-        <section id="naitLogo">
-            <h4>Computer Engineering Technology student </h4>
-            <a href="https://www.nait.ca/nait/home"><img src="./pics/NAIT_logo.jpg" alt="nait logo"></a>
+        <section id="naitLogo" class="hidden">
+            <div id="desc">
+                <h4>Computer Engineering Technology
+                    <br>Northern Alberta Institute of Technology (NAIT)
+                    <br>Edmonton, AB <br>
+                    <span>Graduated:</span> April 2024</h4><br>
+                    
+                    <p><span>Program Highlights:</span> Focused on the practical application of computer
+                         engineering principles, including software development,
+                          systems integration, and network architecture.
+                           Emphasized hands-on learning through projects 
+                           and labs designed to mirror industry challenges.</p>
+            </div>
+            <a href="https://www.nait.ca/programs/computer-engineering-technology?term=2024-fall&intake=c7c7a166-2a9f-45e2-832f-717844634b12"><img src="./pics/NAIT_logo.jpg" alt="nait logo"></a>
         </section>
-        <section id="bauLogo">
-            <h4>Gratuated: Telecommunication Engineering Technology in 2018</h4>
+        <section id="bauLogo" class="hidden">
+            <h4>Gratuated: Telecommunication Engineering Technology in 2018<br>Amman, Jordan</h4>
             <a href="https://www.bau.edu.jo/index.aspx"><img src="./pics/BAU.jpg" alt="BAU LOGO" ></a>
         </section>
+
+    </main>
     
     <footer>
         <ol type="I">

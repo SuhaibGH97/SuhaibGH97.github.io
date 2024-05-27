@@ -1,5 +1,4 @@
-/*Computer Engineering Technology student
-Gratuated: telecommunication engineering
+/*
 logo website
 logomakr.com/app/4eoF2L
 logomakr.com/app/02EyvZ
@@ -7,20 +6,40 @@ https://logomakr.com/
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@500&family=Poppins:wght@500&display=swap');
+* {
+    box-sizing: border-box; /* Ensure proper box sizing */
+    margin: 0;
+    padding: 0;
+}
 body{
-    display: grid;
-    grid-template-columns: 97%;
-    margin:0px;
-    padding: 0px;
+    width: 100%;
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
     background-color: azure;
     font-family: 'Poppins','Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+    justify-content: center;
 }
 header{
     width: 100%;
-    grid-row: 1;
+    position: sticky;
+    top:0;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
     font-family: 'Anton','Franklin Gothic Medium', 'Arial Narrow';
+    border-bottom: 2px solid orange;
+}
+#logo{
+    height: 75px;
+    width: 75px;
+}
+#info{
+    justify-content: center;
+    align-content: center;
 }
 nav{
+    width: 100%;
     display:flex ;
     width: 85%;
     height: 85%;
@@ -30,92 +49,91 @@ nav{
     justify-content: space-between;
     
 }
-a{
+nav a{
     color: black;
     font-weight: bold;
     text-decoration: none;
+    transition: color 0.3s;
 }
-nav ul li a:hover{
+nav a:hover{
     
     color:red;
 }
 nav ul li {
-
     display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
+    margin: 0px 15px;
 }
-.me{
-    grid-row: 5;
-    margin-left: 8%;
-    margin-top: 13%;
-}
-.me h3{
-    font-size: 50px;
-    color: grey;
-    margin-bottom: 20px;
-}
-span{
-    font-size: xx-large;
-    color:orange;
-    font-family: 'Dancing Script','Times New Roman', Times;
-}
-.me p{
-    color: #555;
-    line-height: 22px;
 
+span {
+    color: orange;
 }
 .imgs{
-    grid-row: 2/5;
-    width: 45%;
-    height:80%; 
-    bottom: 0px;
-    right: 100px;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
-
-.imgs:hover #background{
-    bottom: 40px;
-}
-.imgs:hover #me{
-    left: 40px;
-}
-
-#naitLogo{
-    grid-row: 6/8;
-    
-    border:4px solid orange;
-    display: flex;
-    width: 95%;
-    justify-content: center;
-    text-align: center;
-    margin: 20px 0px;   
-}
-#naitLogo a img{
-    height: 70%;
-    width: 70%; 
-    padding: 20px;  
-}
-#bauLogo{
-    grid-row: 8/10;
-    border:4px solid orange;
-    display: flex;
-    width: 95%;
-    justify-content: center;
-    text-align: center;
-    margin: 20px 0px;
-}
-#bauLogo a img{
-    height: 70%;
-    width: 70%;
-    padding: 20px;
-}
-footer{
-    margin-top: 10px;
-    grid-row: 10;
+#home{
+    display: grid;
     width: 100%;
-    background-color: #555;
-    color: orange;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 50px;
+    margin: 50px;
+}
+#me {
+    grid-column: 2;
+    margin-top: 0;
+    padding-top: 0;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    animation: fadeInUp 2s ease-out;
+}
+/* #background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateY(-30%);
+} */
+#naitLogo, #bauLogo {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+}
+#naitLogo h4,
+#bauLogo h4 {
+    margin: 0; /* Reset margin for better alignment */
+}
+#naitLogo img, #bauLogo img {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s;
+}
 
+#naitLogo img:hover, #bauLogo img:hover {
+    transform: scale(1.1);
+}
+#desc{
+    width: 50%;
+}
+footer {
+    width: 100%;
+    background: #555;
+    color: orange;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+footer ol {
+    padding: 0;
+    list-style: upper-roman;
 }
 .soccer{
     margin: 20px;
@@ -151,10 +169,6 @@ footer{
  }
 .toronto img{
     width: 95%;
-}
-footer h2{
-    text-align: center;
-    color: orange;
 }
 .contactme h2{
     width: 100%;
@@ -167,153 +181,106 @@ footer h2{
     margin: 0 10%;
     margin-bottom: 10px;
 }
+/* Keyframe animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+/* Hidden elements for scroll reveal */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive layout */
 @media screen and (min-width: 800px) {
 body{
+    width: 90%;
     display: grid;
-    grid-template-columns: 48% 48%;
     margin:20px;
     padding: 10px;
-    background-color: azure;
 
 }
 header{
     width: 100%;
     margin-bottom: 20px;
     grid-column: 1/3;
-    grid-row: 1;
 }
-nav{
-    display:flex ;
-    width: 85%;
-    margin: auto;
-    padding: 20px 0px;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-a{
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-}
-nav ul li a:hover{
-    
-    color:red;
-}
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-}
-.me{
-    grid-column: 1;
-    grid-row: 5;
-    margin-left: 8%;
-    margin-top: 13%;
-}
-.me h3{
-    font-size: 50px;
-    color: grey;
-    margin-bottom: 20px;
-}
-span{
-    color:orange;
-}
-.me p{
-    color: #555;
-    line-height: 22px;
-
-}
-.imgs{
-    grid-column: 2;
+.imgs {
+    grid-column: 4;
     grid-row: 3/6;
     width: 45%;
-    height:78%;
+    height: 78%;
     position: absolute;
     bottom: 0px;
     right: 100px;
 }
-.imgs img{
-    width: 50%;
-    height: 80%;
+
+.imgs img {
+    width: 60%;
+    height: 100%;
     position: absolute;
     left: 50%;
     bottom: 0%;
-    transform: translateX(-5%);
-    transition: bottom 1s, left 1s;
-}
-.imgs:hover #background{
-    bottom: 40px;
-}
-.imgs:hover #me{
-    left: 40px;
-}
-.studies{
-    display: flex;
-    width: 95%;
-    justify-content: center;
-    text-align: center;
-    margin: 20px 0px;
-    
 }
 
-.studies #naitLogo{
-    grid-column: 1;
-    grid-row: 6;
-    margin-right: 10%;
-    border:4px solid orange;   
+#naitLogo, #bauLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
 }
-.studies #naitLogo a{
-    height: 300px;
-    width: 300px; 
-    padding: 20px;  
-}
-.studies #bauLogo{
-    grid-column: 1;
-    grid-row: 7;
-    margin-left: 10%;
-    border:4px solid orange;
-}
-.studies #bauLogo a{
+#naitLogo a {
     height: 300px;
     width: 300px;
     padding: 20px;
 }
-footer{
+
+#bauLogo a {
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 1/3;
     grid-row: 10;
-    width: 100%;
-    background-color: #555;
-    color: orange;
-
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
-.soccer{
-    grid-column: 1;
-    grid-row: 2;
-}
-.alberta{
-    grid-column: 1/3;
-    grid-row: 3;
-}
-.toronto{
-    grid-column: 2;
-    grid-row: 2;
-}
-.soccer img{
+.soccer,
+.alberta,
+.toronto {
+    margin: 20px;
+    border: 4px solid orange;
+    border-radius: 25px;
     width: 95%;
+    text-align: center;
+    justify-content: center;
+}
 
-}
- .alberta img{
+.soccer img,
+.alberta img,
+.toronto img {
     width: 95%;
-
- }
-.toronto img{
-    width: 95%;
-}
-.contactme{
-    grid-row: 2/5;
-    grid-column: 1/3;
-}
-}
+}}
