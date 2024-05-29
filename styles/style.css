@@ -15,7 +15,8 @@ body{
     width: 100%;
     /* display: grid; */
     /* grid-template-columns: 1fr; */
-    background-color: azure;
+    /*background-color: rgb(89, 89, 89);*/
+    background: linear-gradient(DarkGray, black);
     font-family: 'Poppins','Times New Roman', Times, serif;
     scroll-behavior: smooth;
     justify-content: center;
