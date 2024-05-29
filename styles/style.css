@@ -16,7 +16,8 @@ body{
     /* display: grid; */
     /* grid-template-columns: 1fr; */
     /*background-color: rgb(89, 89, 89);*/
-    background: linear-gradient(DarkGray, black);
+    background: linear-gradient(rgb(28, 27, 27), darkgray);
+    color: aliceblue;
     font-family: 'Poppins','Times New Roman', Times, serif;
     scroll-behavior: smooth;
     justify-content: center;
@@ -51,7 +52,7 @@ nav{
     
 }
 nav a{
-    color: black;
+    color: orange;
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s;
