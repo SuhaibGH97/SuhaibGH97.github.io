@@ -13,15 +13,15 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="../index.html"><img src="../pics/logo.jpg" alt="Logo"></a>
+        <nav id="navbar">
+            <a href="../index.html"><img id="logo" src="../pics/logo.jpg" alt="Logo"></a>
             <ul>
                 <li><a href="../index.html"><u>HOME</u></a></li>
                 <li><a href="./Activities.html"><u>Activities</u></a></li>
             </ul>
         </nav>
      </header>
-    <div class="contactme">
+    <div class="contactme" class="hidden">
             <h2>Contact me</h2>
             <img src="../pics/contactme.jpg" alt="contact">
         <section class="info"> 
@@ -29,7 +29,7 @@
             <br>&quot;<span>Phone Number: </span>suhibghanem@gmail.com&quot;
         </section>
     </div>
-    <footer style="Text-align: center;">&copy;Suhaib Ghanem<br /></footer>
+    <footer style="Text-align: center;">&copy;Suhaib Ghanem<br />Last Modified: </footer>
       <script>
         document.querySelector("footer").innerHTML += document.lastModified;
       </script>

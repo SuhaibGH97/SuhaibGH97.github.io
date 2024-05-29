@@ -16,7 +16,7 @@ body{
     /* display: grid; */
     /* grid-template-columns: 1fr; */
     /*background-color: rgb(89, 89, 89);*/
-    background: linear-gradient(rgb(28, 27, 27), darkgray);
+    background: linear-gradient(rgb(28, 27, 27), lightblue);
     color: aliceblue;
     font-family: 'Poppins','Times New Roman', Times, serif;
     scroll-behavior: smooth;
@@ -137,41 +137,7 @@ footer ol {
     padding: 0;
     list-style: upper-roman;
 }
-.soccer{
-    margin: 20px;
-    border:4px solid orange;
-    border-radius: 25px;
-    width: 95%;
-    text-align: center;
-    justify-content: center;
-}
-.alberta{
-    margin: 20px;
-    border:4px solid orange;
-    border-radius: 25px;
-    width: 95%;
-    text-align: center;
-    justify-content: center;
-}
-.toronto{
-    margin: 20px;
-    border:4px solid orange;
-    border-radius: 25px;
-    width: 95%;
-    text-align: center;
-    justify-content: center;
-}
-.soccer img{
-    width: 95%;
 
-}
- .alberta img{
-    width: 95%;
-
- }
-.toronto img{
-    width: 95%;
-}
 .contactme h2{
     width: 100%;
     background-color: #555;
@@ -269,20 +235,4 @@ footer {
     margin-bottom: 0;
     padding-bottom: 0;
 }
-
-.soccer,
-.alberta,
-.toronto {
-    margin: 20px;
-    border: 4px solid orange;
-    border-radius: 25px;
-    width: 95%;
-    text-align: center;
-    justify-content: center;
 }
-
-.soccer img,
-.alberta img,
-.toronto img {
-    width: 95%;
-}}
