@@ -12,11 +12,13 @@ https://logomakr.com/
     padding: 0;
 }
 body{
+    margin: 0;
+    padding: 0;
     width: 100%;
     /* display: grid; */
     /* grid-template-columns: 1fr; */
     /*background-color: rgb(89, 89, 89);*/
-    background: linear-gradient(rgb(28, 27, 27), lightblue);
+    background: linear-gradient(lightblue,rgb(28, 27, 27));
     color: aliceblue;
     font-family: 'Poppins','Times New Roman', Times, serif;
     scroll-behavior: smooth;
@@ -24,13 +26,15 @@ body{
 }
 header{
     width: 100%;
-    position: sticky;
     top:0;
     margin: 0;
     padding: 0;
     z-index: 9999;
     font-family: 'Anton','Franklin Gothic Medium', 'Arial Narrow';
     border-bottom: 2px solid orange;
+}
+#header-home{
+    position: sticky;
 }
 #logo{
     height: 75px;
@@ -129,8 +133,8 @@ footer {
     background: #555;
     color: orange;
     text-align: center;
-    padding: 0;
-    margin: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 footer ol {
@@ -172,7 +176,49 @@ footer ol {
     opacity: 1;
     transform: translateY(0);
 }
-
+/*Skills and projects css*/
+#skills{
+    text-align: center;
+    font-size: xx-large;
+}
+.pictures{
+    width: 300px;
+    height: 300px;
+}
+#Previous {
+    width: 50px;
+    height: 50px;
+    margin: 0 20%;
+  }
+  #next {
+    width: 50px;
+    height: 50px;
+    margin: 0 20%;
+  }
+  #playPause {
+    width: 50px;
+    height: 50px;
+  }
+  #readonlyTextBox {
+    text-align: center;
+    width: 200px;
+    height: 50px;
+  }
+  #pic
+  {
+   
+    width: 100vw;
+    height:70vh ;
+  }
+  #mainImage {
+    width: 50%;
+    height: 70%;
+  }
+  #inOut {
+    display: flex;
+  
+    justify-content: space-between;
+  }
 /* Responsive layout */
 @media screen and (min-width: 800px) {
 body{
@@ -186,23 +232,6 @@ header{
     width: 100%;
     margin-bottom: 20px;
     grid-column: 1/3;
-}
-.imgs {
-    grid-column: 4;
-    grid-row: 3/6;
-    width: 45%;
-    height: 78%;
-    position: absolute;
-    bottom: 0px;
-    right: 100px;
-}
-
-.imgs img {
-    width: 60%;
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    bottom: 0%;
 }
 
 #naitLogo, #bauLogo {

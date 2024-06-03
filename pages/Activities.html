@@ -9,7 +9,7 @@
     <!-- Link to Ajax library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
     <!-- Link to your JS script -->
-    <script src="../code/code.js"></script>
+    <script src="../code/code-skills.js"></script>
 </head>
 <body>
     <header>
@@ -19,19 +19,30 @@
                 <li><a href="../index.html"><u>HOME</u></a></li>
                 <li><a href="./contact.html"><u>Contact</u></a></li>
             </ul>
-        </header>
-        <section class="hidden">
+        </nav>
+    </header>
+    <main>
+        <div id="skills">
             <h1><span>Skills</span></h1>
-            <div id="pictures">
-            </div>
-        </section>
-        <section class="hidden">
+            <section id="pic">
+                <img src="../pics/skills/csharp.jpg" alt="" id="mainImage">
+            </section>
+           <section id="inOut"> 
+                
+                <img src="../pics/skills/Previous.png" alt="" id="Previous">
+                <input type="text" readonly id="readonlyTextBox">
+                <img src="../pics/skills/Next.png" alt="" id="next"> 
+           </section>
+           <img src="../pics/skills/Play.png" alt="" id="playPause">
+        </div>
+        <div id="Projects">
             <h1><span>Projects</span></h1>
-        </section>
-        <footer style="Text-align: center;">&copy;Suhaib Ghanem<br>Last Modified: </footer>
-      <script>
+        </div>
+    </main>
+    <footer style="Text-align: center;">&copy;Suhaib Ghanem<br />Last Modified: </footer>
+    <script>
         document.querySelector("footer").innerHTML += document.lastModified;
-      </script>
+    </script>
     
 </body>
 </html>
