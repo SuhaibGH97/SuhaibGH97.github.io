@@ -166,6 +166,9 @@ span {
 #naitLogo img:hover, #bauLogo img:hover {
     transform: scale(1.1);
 }
+#progHigh{
+    font-size: small;
+}
 
 #desc {
     width: 50%;
