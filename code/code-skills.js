@@ -1,9 +1,9 @@
 let pause = new Image();
-pause.src = "../pics/skills/pause.png";
+pause.src = "../pics/skills/pause.jpg";
 pause.style.width = "50px";
 pause.style.height = "50px";
 let play = new Image();
-play.src = "../pics/skills/play.png";
+play.src = "../pics/skills/play.jpg";
 play.style.width = "50px";
 play.style.height = "50px";
 let languages = [
