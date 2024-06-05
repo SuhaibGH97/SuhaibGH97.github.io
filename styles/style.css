@@ -30,13 +30,17 @@ body {
 }
 
 header {
-    width: 90%;
     top: 0;
     margin: 0;
     padding: 0;
     z-index: 9999;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow';
     border-bottom: 2px solid orange;
+    width: 100%;
+    margin-bottom: 20px;
+    grid-column: 1 / -1;
+    background: url('../pics/header3.jpg') no-repeat center center;
+    background-size:100%;
 }
 
 #header-home {
@@ -105,13 +109,46 @@ span {
     border-radius: 50%;
     animation: fadeInUp 2s ease-out;
 }
+#about, #education{
+    max-width: 800px; /* Maximum width for the section */
+    margin: 40px auto; /* Center the section with top and bottom margins */
+    padding: 20px; /* Add padding inside the section */
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: aliceblue; /* Text color */
+    font-family: 'Poppins', sans-serif; /* Font family */
+    text-align: center; /* Center-align text */
+}
 
+#about h1,#education h1{
+    font-family: 'Anton', sans-serif; /* Font family for the heading */
+    font-size: 2.5em; /* Font size for the heading */
+    color: orange; /* Heading color */
+    margin-bottom: 20px; /* Space below the heading */
+    border-bottom: 2px solid orange; /* Border below the heading */
+    display: inline-block; /* Inline block for the heading */
+    padding-bottom: 10px; /* Padding below the heading */
+}
+
+#about p {
+    font-size: 1.2em; /* Font size for the paragraph */
+    line-height: 1.6; /* Line height for better readability */
+    color: aliceblue; /* Text color */
+    margin-top: 20px; /* Space above the paragraph */
+    text-align: justify; /* Justify the paragraph text */
+}
 #naitLogo, #bauLogo {
+    margin: 40px auto;
+    padding: 20px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: aliceblue; /* Text color */
+    font-family: 'Poppins', sans-serif; /* Font family */
+    text-align: center; /* Center-align text */
+
 }
 #bauLogo{
     margin-bottom: 200px;
@@ -135,32 +172,24 @@ span {
     max-width: 100%; /* Ensure the width does not cause overflow */
 }
 
+/* Footer specific styles */
 footer {
-    width: 100%;
-    background: #555;
+    background: #222;
     color: orange;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-footer ol {
-    padding: 0;
-    list-style: upper-roman;
-}
-
-.contactme h2 {
-    width: 100%;
-    background-color: #555;
+footer a {
     color: orange;
-    text-align: center;
+    text-decoration: none;
 }
 
-.contactme img {
-    width: 80%;
-    margin: 0 10%;
-    margin-bottom: 10px;
-    max-width: 100%; /* Ensure the width does not cause overflow */
+footer a:hover {
+    text-decoration: underline;
 }
+
 
 /* Keyframe animations */
 @keyframes fadeInUp {
@@ -206,19 +235,14 @@ footer ol {
 }
 
 #Previous {
-    width: 50px;
-    height: 50px;
-    margin: 0;
-    margin-left: 40%;
-    margin-right: 15px;
+    width: 40px;
+    height: 40px;
 }
 
 #next {
-    width: 50px;
-    height: 50px;
-    margin: 0;
-    margin-right: 40%;
-    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+
 }
 
 #playPause {
@@ -240,8 +264,8 @@ footer ol {
 }
 
 #mainImage {
-    width: 40%;
-    height: 300px;
+    width: 35%;
+    height: 200px;
     max-width: 100%; /* Ensure the width does not cause overflow */
 }
 
@@ -251,21 +275,124 @@ footer ol {
 }
 
 #Projects {
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 800px; 
+    margin: 20px auto; 
+    font-family: 'Arial', sans-serif; 
+    color: #333; 
+}
+
+#Projects h1 {
+    font-size: 2em; 
+    color: #0073e6; 
+    text-align: center; 
+}
+
+#Projects h1 span {
+    border-bottom: 2px solid #0073e6; 
+    padding-bottom: 5px; 
+}
+
+#Projects h3 {
+    font-size: 1.5em; 
+    color: #005bb5; 
+    margin-top: 20px; 
+}
+
+#Projects img {
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin: 20px 0; 
+}
+
+#Projects p {
+    line-height: 1.6; 
+    font-size: 1.1em; 
+    margin-top: 10px; 
+    text-align: justify; 
+}
+
+#Projects section {
+    margin-top: 20px; 
+}
+
+#Projects h4 {
+    font-size: 1.3em; 
+    color: #003366; 
+    margin-bottom: 10px; 
+}
+
+#image-grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 10px; 
+}
+
+#image-grid img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+ /*Contact me page css*/
+ .contactme {
     text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactme h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2.5em;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.contactme img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.info {
+    font-size: 1.2em;
+    color: aliceblue;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info span {
+    color: orange;
+    font-weight: bold;
 }
 
 /* Responsive layout */
 @media screen and (min-width: 800px) {
-    body {
-        width: 100%;
+    #about {
+        padding: 15px; /* Reduce padding on smaller screens */
     }
 
-    header {
-        width: 100%;
-        margin-bottom: 20px;
-        grid-column: 1 / -1;
+    #about h1 {
+        font-size: 2em; /* Reduce heading font size on smaller screens */
     }
 
+    #about p {
+        font-size: 1em; /* Reduce paragraph font size on smaller screens */
+    }
     #naitLogo, #bauLogo {
         display: flex;
         flex-direction: column;
@@ -286,14 +413,33 @@ footer ol {
         width: 300px;
         padding: 20px;
     }
+    #mainImage {
+        width: 40%;
+        height: 300px;
+        max-width: 100%; /* Ensure the width does not cause overflow */
+    }
+    #Previous {
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        margin-left: 40%;
+        margin-right: 15px;
+    }
+    
+    #next {
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        margin-right: 40%;
+        margin-left: 15px;
+    }
+    .contactme img {
+        width: 70%;
+        margin: 0 auto;
+    }
 
-    footer {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        grid-column: 1 / -1;
-        margin-bottom: 0;
-        padding-bottom: 0;
+    .info {
+        font-size: 1em;
+        padding: 10px;
     }
 }

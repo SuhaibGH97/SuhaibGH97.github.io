@@ -87,4 +87,5 @@ $(document).ready(() => {
   $("#Previous").click(FPrev);
   $("#next").click(FNext);
   $("#playPause").click(FAuto);
+  FAuto();
 });
